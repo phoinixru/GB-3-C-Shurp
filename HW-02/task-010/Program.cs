@@ -8,6 +8,12 @@
 Console.WriteLine("Enter three-digit number:");
 string? input = Console.ReadLine();
 
+if (null == input)
+{
+    Console.WriteLine("There is no hope");
+    return;
+}
+
 if (!IsThreeDigitNumber(input))
 {
     Console.WriteLine("Nope, please enter three-digit number. Buy.");
